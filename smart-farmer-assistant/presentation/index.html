@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Farmer Assistant - Presentation</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .slide {
+            min-height: 100vh;
+            display: none;
+        }
+        .slide.active {
+            display: flex;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .green-gradient {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+        }
+        .feature-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 0.8s ease-out;
+        }
+        .tech-icon {
+            font-size: 3rem;
+            color: #667eea;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    
+    <!-- Slide 1: Title Slide -->
+    <div class="slide active gradient-bg text-white items-center justify-center">
+        <div class="container mx-auto px-8 text-center fade-in">
+            <div class="mb-8">
+                <i class="fas fa-seedling text-6xl mb-4 animate-pulse"></i>
+            </div>
+            <h1 class="text-6xl font-bold mb-4">Smart Farmer Assistant</h1>
+            <p class="text-3xl mb-8 opacity-90">"Making Farming Smarter with AI"</p>
+            <div class="text-xl opacity-80">
+                <p>Presented by: Your Name</p>
+                <p class="mt-2">College Project Showcase 2024</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 2: Problem Statement -->
+    <div class="slide items-center justify-center bg-white">
+        <div class="container mx-auto px-8">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-5xl font-bold text-center mb-12 text-gray-800">Problem Statement</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="feature-card bg-red-50 p-8 rounded-xl border-2 border-red-200">
+                        <i class="fas fa-chart-line text-4xl text-red-500 mb-4"></i>
+                        <h3 class="text-2xl font-semibold mb-3 text-red-700">Expense Management</h3>
+                        <p class="text-gray-700">Farmers struggle to track investments, profits, and losses systematically</p>
+                    </div>
+                    <div class="feature-card bg-orange-50 p-8 rounded-xl border-2 border-orange-200">
+                        <i class="fas fa-seedling text-4xl text-orange-500 mb-4"></i>
+                        <h3 class="text-2xl font-semibold mb-3 text-orange-700">Crop Selection</h3>
+                        <p class="text-gray-700">Difficulty choosing optimal crops based on soil, weather, and market conditions</p>
+                    </div>
+                    <div class="feature-card bg-yellow-50 p-8 rounded-xl border-2 border-yellow-200">
+                        <i class="fas fa-database text-4xl text-yellow-600 mb-4"></i>
+                        <h3 class="text-2xl font-semibold mb-3 text-yellow-700">Data-Driven Decisions</h3>
+                        <p class="text-gray-700">Lack of analytics and insights for better farming decisions</p>
+                    </div>
+                    <div class="feature-card bg-purple-50 p-8 rounded-xl border-2 border-purple-200">
+                        <i class="fas fa-mobile-alt text-4xl text-purple-500 mb-4"></i>
+                        <h3 class="text-2xl font-semibold mb-3 text-purple-700">Technology Access</h3>
+                        <p class="text-gray-700">Limited access to modern farming technology and digital tools</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 3: Solution -->
+    <div class="slide items-center justify-center green-gradient text-white">
+        <div class="container mx-auto px-8 text-center">
+            <h2 class="text-5xl font-bold mb-8">Our Solution</h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white bg-opacity-20 backdrop-blur-lg rounded-2xl p-12">
+                    <i class="fas fa-robot text-6xl mb-6"></i>
+                    <h3 class="text-4xl font-semibold mb-6">Smart Farmer Assistant</h3>
+                    <p class="text-2xl leading-relaxed opacity-90">
+                        A simple, intelligent, and accessible platform that empowers farmers with AI-driven insights, 
+                        voice-based data entry, and personalized recommendations to maximize productivity and profits.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 4: Key Features -->
+    <div class="slide items-center justify-center bg-gray-100">
+        <div class="container mx-auto px-8">
+            <h2 class="text-5xl font-bold text-center mb-12 text-gray-800">Key Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <div class="feature-card bg-white p-6 rounded-xl shadow-lg">
+                    <i class="fas fa-wallet text-3xl text-green-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Expense & Profit Tracking</h3>
+                    <p class="text-gray-600">Monitor investments, profits, and losses with detailed analytics</p>
+                </div>
+                <div class="feature-card bg-white p-6 rounded-xl shadow-lg">
+                    <i class="fas fa-brain text-3xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Crop Recommendation System</h3>
+                    <p class="text-gray-600">AI-powered suggestions based on soil, weather, and market data</p>
+                </div>
+                <div class="feature-card bg-white p-6 rounded-xl shadow-lg">
+                    <i class="fas fa-cloud-sun text-3xl text-yellow-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Weather-based Suggestions</h3>
+                    <p class="text-gray-600">Real-time weather insights and farming recommendations</p>
+                </div>
+                <div class="feature-card bg-white p-6 rounded-xl shadow-lg">
+                    <i class="fas fa-microphone text-3xl text-purple-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">AI Voice Assistant</h3>
+                    <p class="text-gray-600">Hindi voice commands for easy data entry and queries</p>
+                </div>
+                <div class="feature-card bg-white p-6 rounded-xl shadow-lg">
+                    <i class="fas fa-lightbulb text-3xl text-orange-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Smart Insights</h3>
+                    <p class="text-gray-600">Personalized recommendations to optimize farming practices</p>
+                </div>
+                <div class="feature-card bg-white p-6 rounded-xl shadow-lg">
+                    <i class="fas fa-chart-pie text-3xl text-red-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Analytics Dashboard</h3>
+                    <p class="text-gray-600">Visual reports and trends for better decision making</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 5: Unique Features -->
+    <div class="slide items-center justify-center bg-gradient-to-r from-purple-600 to-blue-600 text-white">
+        <div class="container mx-auto px-8">
+            <h2 class="text-5xl font-bold text-center mb-12">Unique Features</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-8">
+                    <div class="bg-white bg-opacity-20 backdrop-blur-lg rounded-xl p-8 transform hover:scale-105 transition-transform">
+                        <div class="flex items-center space-x-6">
+                            <i class="fas fa-microphone-alt text-5xl"></i>
+                            <div>
+                                <h3 class="text-3xl font-semibold mb-2">Voice-based Data Entry</h3>
+                                <p class="text-xl opacity-90">Hindi language support for farmers who prefer speaking over typing</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white bg-opacity-20 backdrop-blur-lg rounded-xl p-8 transform hover:scale-105 transition-transform">
+                        <div class="flex items-center space-x-6">
+                            <i class="fas fa-sms text-5xl"></i>
+                            <div>
+                                <h3 class="text-3xl font-semibold mb-2">SMS & IVR Support</h3>
+                                <p class="text-xl opacity-90">Accessible for non-smartphone users through SMS and voice calls</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white bg-opacity-20 backdrop-blur-lg rounded-xl p-8 transform hover:scale-105 transition-transform">
+                        <div class="flex items-center space-x-6">
+                            <i class="fas fa-hand-pointer text-5xl"></i>
+                            <div>
+                                <h3 class="text-3xl font-semibold mb-2">Simple UI for Low-Literacy</h3>
+                                <p class="text-xl opacity-90">Large buttons, visual icons, and intuitive design for easy navigation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 6: How It Works -->
+    <div class="slide items-center justify-center bg-white">
+        <div class="container mx-auto px-8">
+            <h2 class="text-5xl font-bold text-center mb-12 text-gray-800">How It Works</h2>
+            <div class="max-w-5xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="bg-green-100 w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-user text-4xl text-green-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Step 1: Data Input</h3>
+                        <p class="text-gray-600">Farmer enters data through voice commands or simple forms</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-blue-100 w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-cogs text-4xl text-blue-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Step 2: AI Analysis</h3>
+                        <p class="text-gray-600">System analyzes data with machine learning algorithms</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-purple-100 w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-lightbulb text-4xl text-purple-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Step 3: Insights</h3>
+                        <p class="text-gray-600">Provides personalized recommendations and farming advice</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 7: Tech Stack -->
+    <div class="slide items-center justify-center bg-gray-900 text-white">
+        <div class="container mx-auto px-8">
+            <h2 class="text-5xl font-bold text-center mb-12">Tech Stack</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+                <div class="text-center">
+                    <i class="fab fa-react tech-icon mb-4"></i>
+                    <h3 class="text-xl font-semibold">React</h3>
+                    <p class="text-gray-400">Frontend</p>
+                </div>
+                <div class="text-center">
+                    <i class="fab fa-node-js tech-icon mb-4"></i>
+                    <h3 class="text-xl font-semibold">Node.js</h3>
+                    <p class="text-gray-400">Backend</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-leaf tech-icon mb-4"></i>
+                    <h3 class="text-xl font-semibold">MongoDB</h3>
+                    <p class="text-gray-400">Database</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-microphone tech-icon mb-4"></i>
+                    <h3 class="text-xl font-semibold">Web Speech API</h3>
+                    <p class="text-gray-400">Voice AI</p>
+                </div>
+            </div>
+            <div class="mt-12 text-center">
+                <div class="bg-gray-800 rounded-xl p-6 max-w-2xl mx-auto">
+                    <p class="text-lg opacity-80">Modern, scalable, and farmer-friendly technology stack</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 8: UI/UX Design -->
+    <div class="slide items-center justify-center bg-gradient-to-br from-green-50 to-blue-50">
+        <div class="container mx-auto px-8">
+            <h2 class="text-5xl font-bold text-center mb-12 text-gray-800">UI/UX Design</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <i class="fas fa-mobile-alt text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="text-2xl font-semibold mb-3">Mobile-First Design</h3>
+                    <p class="text-gray-600">Optimized for smartphones used by rural farmers</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <i class="fas fa-hand-pointer text-4xl text-green-500 mb-4"></i>
+                    <h3 class="text-2xl font-semibold mb-3">Large Touch Targets</h3>
+                    <p class="text-gray-600">Big buttons for easy interaction on small screens</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <i class="fas fa-language text-4xl text-purple-500 mb-4"></i>
+                    <h3 class="text-2xl font-semibold mb-3">Hindi Language Support</h3>
+                    <p class="text-gray-600">Native language interface for better accessibility</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <i class="fas fa-universal-access text-4xl text-orange-500 mb-4"></i>
+                    <h3 class="text-2xl font-semibold mb-3">Accessibility First</h3>
+                    <p class="text-gray-600">Designed for users with limited technical literacy</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 9: Future Scope -->
+    <div class="slide items-center justify-center bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
+        <div class="container mx-auto px-8">
+            <h2 class="text-5xl font-bold text-center mb-12">Future Scope</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white bg-opacity-20 backdrop-blur-lg rounded-xl p-6">
+                        <i class="fas fa-chart-line text-4xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Real-time Mandi Prices</h3>
+                        <p class="opacity-90">Live market price tracking for better selling decisions</p>
+                    </div>
+                    <div class="bg-white bg-opacity-20 backdrop-blur-lg rounded-xl p-6">
+                        <i class="fas fa-bug text-4xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">AI Crop Disease Detection</h3>
+                        <p class="opacity-90">Image recognition for early disease detection</p>
+                    </div>
+                    <div class="bg-white bg-opacity-20 backdrop-blur-lg rounded-xl p-6">
+                        <i class="fas fa-building text-4xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Government Schemes</h3>
+                        <p class="opacity-90">Integration with agricultural subsidy programs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 10: Impact -->
+    <div class="slide items-center justify-center bg-white">
+        <div class="container mx-auto px-8">
+            <h2 class="text-5xl font-bold text-center mb-12 text-gray-800">Impact</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                    <div class="text-center">
+                        <div class="bg-green-100 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-3xl font-bold text-green-600">+30%</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Profit Increase</h3>
+                        <p class="text-gray-600">Better decision making leads to higher profits</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-blue-100 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-3xl font-bold text-blue-600">-25%</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Loss Reduction</h3>
+                        <p class="text-gray-600">Early warnings prevent crop losses</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-purple-100 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-3xl font-bold text-purple-600">50%</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Time Saved</h3>
+                        <p class="text-gray-600">Voice input reduces data entry time</p>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-r from-green-500 to-blue-500 text-white rounded-xl p-8 text-center">
+                    <i class="fas fa-quote-left text-4xl mb-4 opacity-50"></i>
+                    <p class="text-2xl italic mb-4">
+                        "Smart Farmer Assistant transforms traditional farming into smart farming"
+                    </p>
+                    <i class="fas fa-quote-right text-4xl opacity-50"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 11: Demo Screenshots -->
+    <div class="slide items-center justify-center bg-gray-100">
+        <div class="container mx-auto px-8">
+            <h2 class="text-5xl font-bold text-center mb-12 text-gray-800">Application Demo</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="bg-green-500 h-48 flex items-center justify-center">
+                        <i class="fas fa-home text-white text-4xl"></i>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold mb-2">Dashboard</h3>
+                        <p class="text-gray-600 text-sm">Overview of farm performance and insights</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="bg-blue-500 h-48 flex items-center justify-center">
+                        <i class="fas fa-wallet text-white text-4xl"></i>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold mb-2">Expense Tracking</h3>
+                        <p class="text-gray-600 text-sm">Monitor farming expenses and profits</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="bg-purple-500 h-48 flex items-center justify-center">
+                        <i class="fas fa-microphone text-white text-4xl"></i>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold mb-2">Voice Assistant</h3>
+                        <p class="text-gray-600 text-sm">Hindi voice commands for data entry</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 12: Conclusion -->
+    <div class="slide items-center justify-center green-gradient text-white">
+        <div class="container mx-auto px-8 text-center">
+            <h2 class="text-6xl font-bold mb-8">Conclusion</h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white bg-opacity-20 backdrop-blur-lg rounded-2xl p-12">
+                    <i class="fas fa-seedling text-6xl mb-6 animate-pulse"></i>
+                    <h3 class="text-4xl font-semibold mb-6">Smart Farmer Assistant</h3>
+                    <p class="text-2xl mb-8 opacity-90">= Future of Farming</p>
+                    <div class="space-y-4 text-xl">
+                        <p>🌱 Empowering farmers with AI technology</p>
+                        <p>📊 Data-driven decisions for better yields</p>
+                        <p>🗣️ Voice-first approach for accessibility</p>
+                        <p>🚀 Transforming agriculture in India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Controls -->
+    <div class="fixed bottom-8 right-8 z-50 flex space-x-4">
+        <button onclick="previousSlide()" class="bg-white text-gray-800 px-6 py-3 rounded-full shadow-lg hover:bg-gray-100 transition">
+            <i class="fas fa-chevron-left"></i> Previous
+        </button>
+        <button onclick="nextSlide()" class="bg-green-500 text-white px-6 py-3 rounded-full shadow-lg hover:bg-green-600 transition">
+            Next <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <!-- Slide Counter -->
+    <div class="fixed top-8 right-8 bg-white px-4 py-2 rounded-full shadow-lg">
+        <span id="slideCounter">1 / 12</span>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[index].classList.add('active');
+            document.getElementById('slideCounter').textContent = `${index + 1} / ${totalSlides}`;
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        function previousSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') nextSlide();
+            if (e.key === 'ArrowLeft') previousSlide();
+        });
+
+        // Touch/swipe support for mobile
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        document.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        });
+
+        document.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        });
+
+        function handleSwipe() {
+            if (touchEndX < touchStartX - 50) nextSlide();
+            if (touchEndX > touchStartX + 50) previousSlide();
+        }
+
+        // Auto-play (optional - comment out if not needed)
+        // setInterval(nextSlide, 10000);
+    </script>
+</body>
+</html>
