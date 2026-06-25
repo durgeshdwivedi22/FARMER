@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Routes, Route, Navigate, BrowserRouter } from 'react-router-dom'
+import { Routes, Route, Navigate, HashRouter as BrowserRouter } from 'react-router-dom'
 import { useTranslation } from './utils/translation'
 
 // Components
